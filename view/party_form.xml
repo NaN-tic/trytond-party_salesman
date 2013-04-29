@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- This file is part of party_salesman module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/group[@id=&quot;checkboxes&quot;]"
+            position="inside">
+        <label name="agent"/>
+        <field name="agent" xexpand="0" width="25"/>
+    </xpath>
+
+    <xpath expr="/form/notebook/page[@id=&quot;general&quot;]"
+            position="after">
+        <page string="Salesmans" id="salesmans">
+            <field name="salesmans"/>
+        </page>
+    </xpath>
+</data>

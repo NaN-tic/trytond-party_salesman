@@ -1,0 +1,47 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:party.party,salesmans:"
+msgid "Salesmans"
+msgstr "Comercials"
+
+msgctxt "field:party.party-sale.salesman,create_date:"
+msgid "Create Date"
+msgstr "Data creació"
+
+msgctxt "field:party.party-sale.salesman,create_uid:"
+msgid "Create User"
+msgstr "Usuari creació"
+
+msgctxt "field:party.party-sale.salesman,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:party.party-sale.salesman,party:"
+msgid "Party"
+msgstr "Tercer"
+
+msgctxt "field:party.party-sale.salesman,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:party.party-sale.salesman,salesman:"
+msgid "Salesman"
+msgstr "Comercial"
+
+msgctxt "field:party.party-sale.salesman,write_date:"
+msgid "Write Date"
+msgstr "Data modificació"
+
+msgctxt "field:party.party-sale.salesman,write_uid:"
+msgid "Write User"
+msgstr "Usuari modificació"
+
+msgctxt "model:party.party-sale.salesman,name:"
+msgid "Party - Salesmans"
+msgstr "Tercer - Comercial"
+
+msgctxt "view:party.party:"
+msgid "Salesmans"
+msgstr "Comercials"
