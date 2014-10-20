@@ -17,7 +17,7 @@ class PartySalesman(ModelSQL):
         select=True, required=True)
 
 
-class Party():
+class Party:
     __name__ = 'party.party'
     agent = fields.Boolean('Agent',
         help='If you check this field, this party will be available as a '
