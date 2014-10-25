@@ -7,6 +7,7 @@ from .party import *
 
 def register():
     Pool.register(
+        Employee,
         PartySalesman,
         Party,
         module='party_salesman', type_='model')

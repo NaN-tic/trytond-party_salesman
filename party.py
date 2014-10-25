@@ -4,24 +4,30 @@
 from trytond.model import ModelSQL, fields
 from trytond.pool import PoolMeta
 
-__all__ = ['PartySalesman', 'Party']
+__all__ = ['Employee', 'PartySalesman', 'Party']
 __metaclass__ = PoolMeta
 
 
+class Employee:
+    __name__ = 'company.employee'
+    salesman = fields.Boolean('Salesman',
+        help='If you check this field, this employee will be available as a '
+                'salesman agent.')
+
+
 class PartySalesman(ModelSQL):
-    'Party - Salesmans'
-    __name__ = 'party.party-sale.salesman'
+    'Party - Salesman'
+    __name__ = 'party.party-company.employee.salesman'
     party = fields.Many2One('party.party', 'Party', ondelete='CASCADE',
         select=True, required=True)
-    salesman = fields.Many2One('party.party', 'Salesman', ondelete='CASCADE',
-        select=True, required=True)
+    salesman = fields.Many2One('company.employee', 'Salesman',
+        ondelete='CASCADE', select=True, required=True)
 
 
 class Party:
     __name__ = 'party.party'
-    agent = fields.Boolean('Agent',
-        help='If you check this field, this party will be available as a '
-                'creditor or agent.')
-    salesmans = fields.Many2Many('party.party-sale.salesman',
-        'salesman', 'party', 'Salesmans',
+
+    salesmans = fields.Many2Many('party.party-company.employee.salesman',
+        'party', 'salesman', 'Salesmans',
+        domain=[('salesman', '=', True)],
         )
