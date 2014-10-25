@@ -2,46 +2,57 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:company.employee,salesman:"
+msgid "Salesman"
+msgstr "Comercial"
+
 msgctxt "field:party.party,salesmans:"
 msgid "Salesmans"
-msgstr "Comerciantes"
+msgstr "Comerciales"
 
-msgctxt "field:party.party-sale.salesman,create_date:"
+msgctxt "field:party.party-company.employee.salesman,create_date:"
 msgid "Create Date"
 msgstr "Fecha creación"
 
-msgctxt "field:party.party-sale.salesman,create_uid:"
+msgctxt "field:party.party-company.employee.salesman,create_uid:"
 msgid "Create User"
 msgstr "Usuario creación"
 
-msgctxt "field:party.party-sale.salesman,id:"
+msgctxt "field:party.party-company.employee.salesman,id:"
 msgid "ID"
 msgstr "ID"
 
-msgctxt "field:party.party-sale.salesman,party:"
+msgctxt "field:party.party-company.employee.salesman,party:"
 msgid "Party"
 msgstr "Tercero"
 
-msgctxt "field:party.party-sale.salesman,rec_name:"
+msgctxt "field:party.party-company.employee.salesman,rec_name:"
 msgid "Name"
 msgstr "Nombre"
 
-msgctxt "field:party.party-sale.salesman,salesman:"
+msgctxt "field:party.party-company.employee.salesman,salesman:"
 msgid "Salesman"
-msgstr "Comerciante"
+msgstr "Comercial"
 
-msgctxt "field:party.party-sale.salesman,write_date:"
+msgctxt "field:party.party-company.employee.salesman,write_date:"
 msgid "Write Date"
 msgstr "Fecha modificación"
 
-msgctxt "field:party.party-sale.salesman,write_uid:"
+msgctxt "field:party.party-company.employee.salesman,write_uid:"
 msgid "Write User"
 msgstr "Usuario modificación"
 
-msgctxt "model:party.party-sale.salesman,name:"
-msgid "Party - Salesmans"
-msgstr "Tercero - Comerciante"
+msgctxt "help:company.employee,salesman:"
+msgid ""
+"If you check this field, this employee will be available as a salesman "
+"agent."
+msgstr ""
+"Si marca este campo, este empleado estará disponible como agente comercial."
+
+msgctxt "model:party.party-company.employee.salesman,name:"
+msgid "Party - Salesman"
+msgstr "Tercero - Comercial"
 
 msgctxt "view:party.party:"
 msgid "Salesmans"
-msgstr "Comerciantes"
+msgstr "Comerciales"
