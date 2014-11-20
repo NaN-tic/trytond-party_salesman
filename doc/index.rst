@@ -1,4 +1,5 @@
-Sale Salesman Module
+Party Salesman Module
 ####################
 
-Management of parties and salesman.
+Management of parties and salesman (employee).
+
