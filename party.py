@@ -5,10 +5,10 @@ from trytond.model import ModelSQL, fields
 from trytond.pool import PoolMeta
 
 __all__ = ['Employee', 'PartySalesman', 'Party']
-__metaclass__ = PoolMeta
 
 
 class Employee:
+    __metaclass__ = PoolMeta
     __name__ = 'company.employee'
     salesman = fields.Boolean('Salesman',
         help='If you check this field, this employee will be available as a '
@@ -25,6 +25,7 @@ class PartySalesman(ModelSQL):
 
 
 class Party:
+    __metaclass__ = PoolMeta
     __name__ = 'party.party'
 
     salesmans = fields.Many2Many('party.party-company.employee.salesman',
