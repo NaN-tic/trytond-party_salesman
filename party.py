@@ -7,8 +7,7 @@ from trytond.pool import PoolMeta
 __all__ = ['Employee', 'PartySalesman', 'Party']
 
 
-class Employee:
-    __metaclass__ = PoolMeta
+class Employee(metaclass=PoolMeta):
     __name__ = 'company.employee'
     salesman = fields.Boolean('Salesman',
         help='If you check this field, this employee will be available as a '
@@ -24,11 +23,7 @@ class PartySalesman(ModelSQL):
         ondelete='CASCADE', select=True, required=True)
 
 
-class Party:
-    __metaclass__ = PoolMeta
+class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
-
     salesmans = fields.Many2Many('party.party-company.employee.salesman',
-        'party', 'salesman', 'Salesmans',
-        domain=[('salesman', '=', True)],
-        )
+        'party', 'salesman', 'Salesmans', domain=[('salesman', '=', True)])
